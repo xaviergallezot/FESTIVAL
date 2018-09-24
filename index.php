@@ -26,7 +26,7 @@ echo " <br>
    <tr>
       <td class='texteAccueil'>
       <ul>
-         <li>Gérer les établissements (caractéristiques et capacités d'accueil) acceptant d'héberger les groupes de musiciens.
+         <li>Gérer les établissements (caractéristiques et capacités d'accueil) acceptant d'héberger les equipes sportives.
          <p>
 	      </p>
          <li>Consulter, réaliser ou modifier les attributions des chambres aux groupes dans les établissements.
