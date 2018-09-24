@@ -16,7 +16,7 @@ echo'
 <!--  Tableau contenant le titre -->
 <table width="100%" cellpadding="0" cellspacing="0">
    <tr> 
-      <td class="titre">Festival Folklores du Monde <br>
+      <td class="titre">Festival des sports de la M2L <br>
       <span id="texteNiveau2" class="texteNiveau2">
       H&eacute;bergement des groupes</span><br>&nbsp;
       </td>
