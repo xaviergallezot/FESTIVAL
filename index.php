@@ -13,13 +13,10 @@ echo " <br>
    <tr>  
 
       <td class='texteAccueil'>
-<<<<<<< HEAD
+
 
          Cette application web permet de gérer l'hébergement des équipes sportives présentes lors de Festival de la M2L.
 
-=======
-         Cette application web permet de gérer l'hébergement des équipes sportives présentes lors de Festival de la M2L.
->>>>>>> 0e3bf144f66323f2293f3f177b2415ef82fec24b
       </td>
 
    </tr>
@@ -55,13 +52,11 @@ echo " <br>
       <td class='texteAccueil'>
 
       <ul>
-<<<<<<< HEAD
+
 
          <li>Gérer les établissements (caractéristiques et capacités d'accueil) acceptant d'héberger les equipes sportives.
 
-=======
-         <li>Gérer les établissements (caractéristiques et capacités d'accueil) acceptant d'héberger les equipes sportives.
->>>>>>> 0e3bf144f66323f2293f3f177b2415ef82fec24b
+
          <p>
 
 	      </p>
