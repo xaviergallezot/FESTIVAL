@@ -47,7 +47,7 @@ if ($action=='demanderModifEtab')
    $prenomResponsable=$lgEtab['prenomResponsable'];
    $nombreChambresOffertes=$lgEtab['nombreChambresOffertes'];
    //tentative pour information a rajouter
-   $infopratique=$lgEtab['InformationPratique'];
+   $infopratique=$lgEtab['infopratique'];
 }
 else
 {
@@ -63,7 +63,7 @@ else
    $prenomResponsable=$_REQUEST['prenomResponsable'];
    $nombreChambresOffertes=$_REQUEST['nombreChambresOffertes'];
       //tentative pour information a rajouter
-   $infopratique=$lgEtab['InformationPratique'];
+   $infopratique=$lgEtab['infopratique'];
    
 
    verifierDonneesEtabM($connexion, $id, $nom, $adresseRue, $codePostal, $ville,  
@@ -173,7 +173,7 @@ echo "
 		  <tr class="ligneTabNonQuad">
             <td> Information pratique*: </td>
             <td><input type="text" value="'.$infopratique.'" name=
-            "nombreChambresOffertes" size ="150" maxlength="3"></td>
+            "infopratique" size ="150" maxlength="3"></td>
          </tr>
 		
 			
