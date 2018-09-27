@@ -44,6 +44,8 @@ if ($action=='demanderCreEtab')
    $nomResponsable='';
    $prenomResponsable='';
    $nombreChambresOffertes='';
+   $infopratique='';
+   $motdepasse='';
 }
 else
 {
@@ -59,14 +61,15 @@ else
    $nomResponsable=$_REQUEST['nomResponsable'];
    $prenomResponsable=$_REQUEST['prenomResponsable'];
    $nombreChambresOffertes=$_REQUEST['nombreChambresOffertes'];
-
+   $infopratique=$_REQUEST['infopratique'];
+   $motdepasse=$_REQUEST['motdepasse'];
    verifierDonneesEtabC($connexion, $id, $nom, $adresseRue, $codePostal, $ville, 
-                        $tel, $nomResponsable, $nombreChambresOffertes);      
+                        $tel, $nomResponsable, $nombreChambresOffertes, $infopratique ,$motdepasse);      
    if (nbErreurs()==0)
    {        
       creerEtablissement($connexion, $id, $nom, $adresseRue, $codePostal, $ville,  
                          $tel, $adresseElectronique, $type, $civiliteResponsable, 
-                         $nomResponsable, $prenomResponsable, $nombreChambresOffertes);
+                         $nomResponsable, $prenomResponsable, $nombreChambresOffertes ,$infopratique ,$motdepasse);
    }
 }
 
@@ -86,6 +89,12 @@ echo "
       </tr>";
      
       echo '
+	   </tr>
+          <tr class="ligneTabNonQuad">
+            <td> Mot de passe  (Maximum 10 caractéres)*: </td>
+            <td><input type="password" value="'.$motdepasse.'" name=
+            "motdepasse" size ="10" maxlength="10"></td>
+         </tr>
       <tr class="ligneTabNonQuad">
          <td> Nom*: </td>
          <td><input type="text" value="'.$nom.'" name="nom" size="50" 
@@ -164,7 +173,15 @@ echo "
             <td> Nombre chambres offertes*: </td>
             <td><input type="text" value="'.$nombreChambresOffertes.'" name=
             "nombreChambresOffertes" size ="2" maxlength="3"></td>
+         </tr>*
+		          </tr>
+          <tr class="ligneTabNonQuad">
+            <td> Information Pratique*: </td>
+            <td><input type="text" value="'.$infopratique.'" name=
+            "infopratique" size ="100" maxlength="3"></td>
          </tr>
+		  </tr>
+          
    </table>';
    
    echo "
